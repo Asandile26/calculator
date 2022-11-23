@@ -1,0 +1,41 @@
+
+* ::before, ::after {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 300px;
+    height: 500px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(28, 8, 8);
+}
+body {
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    align-items: center;
+}
+#screen {
+    grid-column: 1/-1;
+    
+}
+.key {
+    background-color: rgb(230, 230, 163);
+    color: rgb(72, 72, 20);
+}
+.operator {
+    background-color: rgb(153, 153, 231);
+}
+@media only screen and (max-width: 720px) {
+    body{
+        width: 100%;
+        height: 100%;
+    }
+}
