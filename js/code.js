@@ -24,4 +24,7 @@ let deleteBtn = document.querySelector('.delete');
 deleteBtn.addEventListener('click', function(){
     screen.value = screen.value.slice('0', '-1')
 })
-
+let clearAll = document.getElementById('cal');
+clearAll.addEventListener('click', ()=>{
+    screen.value = "";
+} )

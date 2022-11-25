@@ -2,23 +2,23 @@
 * ::before, ::after {
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .container-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
+    /* column-gap: 10px; */
+    /* row-gap: 10px; */
     width: 300px;
     height: 500px;
     justify-content: center;
     margin: auto;
     border-radius: 20px;
-    background-color: rgb(28, 8, 8);
+    color: white;
 }
 body {
-    /* background-color: antiquewhite; */
+    /* background: #091921; */
     justify-content: center;
     align-items: center;
 }
@@ -26,16 +26,39 @@ body {
     grid-column: 1/-1;
     
 }
-.key {
+
+/* .key {
     background-color: rgb(230, 230, 163);
     color: rgb(72, 72, 20);
 }
 .operator {
     background-color: rgb(153, 153, 231);
-}
+} */
+
 @media only screen and (max-width: 720px) {
     body{
         width: 100%;
         height: 100%;
     }
+}
+
+button {
+    color: white;
+    background: #091921;
+    font-weight: lighter;
+ 
+}
+button:hover {
+    background-color: aqua;
+}
+#cal {
+    grid-column: 1/3;
+}
+
+.equal {
+    grid-column: 3/-1;
+}
+#screen {
+    font-weight: bold;
+    font-size: larger;
 }
