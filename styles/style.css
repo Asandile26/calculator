@@ -1,5 +1,9 @@
 
-* ::before, ::after {
+*,
+::after,
+::before{
+    padding: 0px;
+    margin: 0px;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
     font-weight: 900;
@@ -18,7 +22,7 @@
     color: white;
 }
 body {
-    /* background: #091921; */
+    background-color: #0f232d;
     justify-content: center;
     align-items: center;
 }
